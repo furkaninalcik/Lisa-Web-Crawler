@@ -44,7 +44,7 @@ def get_user_page_data(link,name,userId, userData, inlineId, tp):
 
             userData.write(name + " " + str(userId) + " " + str(likesayisi) + " " + str(userId) + "_" +str(inlinePhotoId) + " " +str(locationCount)+ " " +str(hashtagCount) + " " + time+ "\n")
             inlinePhotoId += 1
-    print totalPost
+    print (totalPost)
 
     if(totalPost <= 10):
         if len(userPageTree.xpath('/html/body/nav[@class="next-cont"]/a/@href')) != 0:
@@ -61,8 +61,8 @@ with open(sys.argv[2] + ".txt", "w") as userData:
         for el in searchTree.xpath('/html/body/section/div/div/article'):
             for userLink in el.xpath('div/div/div/div/a/@href'):
                 if u == userLink.split("/")[4]:
-                    print "Instagram user " + u + " is found in Pictagram search"
-                    print "Kullanici Instagram Id = " + userLink.split("/")[5]
+                    print ("Instagram user " + u + " is found in Pictagram search")
+                    print ("Kullanici Instagram Id = " + userLink.split("/")[5])
                     get_user_page_data(userLink,u,userId, userData, 0, 0)
                     userId += 1
 
