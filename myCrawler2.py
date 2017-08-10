@@ -12,20 +12,36 @@ link = "http://influence.iconosquare.com/"
 
 '//*[@id="home-top-brands"]/div[2]/table/tbody[1]/tr[1]'
 
+<<<<<<< HEAD
 //*[@id="home-top-brands"]/div[2]/table/tbody[1]/tr[2]
 
 //*[@id="home-top-brands"]/div[2]/table/tbody[1]
+=======
+'//*[@id="home-top-brands"]/div[2]/table/tbody[1]/tr[2]'
+
+'//*[@id="home-top-brands"]/div[2]/table/tbody[1]'
+>>>>>>> debugged
 
 
 def crawler():
     influencerPage = requests.get(link)
     influencerPageTree = html.fromstring(influencerPage.content)
 
+<<<<<<< HEAD
     for influencer in influencerPageTree.xpath('//*[@id="home-top-brands"]/div[2]/table/tbody[1]'):
         
 
         print (influencer)
 
+=======
+    for i in range(10):
+        
+        influencer = influencerPageTree.xpath('//*[@id="home-top-brands"]/div[2]/table/tbody[1]/tr[%d]' % i)
+
+        print (influencer)
+
+crawler()
+>>>>>>> debugged
 '''
 
         userInstagramPhotoUrl = userPostBox.xpath('div/div[@class="panel-body"]/div[@class="content-image image"]/a/img/@src')
