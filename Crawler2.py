@@ -10,6 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 import time
+import selenium
 
 def convertToInteger(text):
 	index = 0
@@ -38,7 +39,7 @@ def crawler():
     # you may also want to remove whitespace characters like `\n` at the end of each line
     influencers = [x.strip() for x in influencers] 
     
-    influencer_info.write('Kullanici Adi' + '\t\t' + 'Kullanici No' +'\t\t' + 'Takipci Sayisi' +'\t\t'+ 'Fotograf No' +'\t\t'+ 'Fotograf Link'+'\t\t' + 'Location'+'\t\t' + 'Hashtag' + '\n')
+    influencer_info.write('Kullanici Adi' + '\t\t' + 'Kullanici No' +'\t\t' + 'Takipci Sayisi' +'\t\t'+ 'Fotograf No' +'\t\t'+ 'Fotograf Link'+'\t\t' + 'Location'+'\t\t' + 'Hashtag' + '\n\n')
 
     index_count = 0
 
@@ -101,12 +102,26 @@ def crawler():
 
                         print(num_of_media.text)
                     
-
-
                         #timestamp = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div/div[2]/div/article/div[2]/div[2]/a/time')
 
-                        photo_no = str(i*3 + j)
+                        photo_no = index + '_' + str((i-1)*3 + j)
  
+                        #hashtags = driver2.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span')
+                        
+                        try:
+                            #hashtag_link = hashtags.find_element_by_css_selector('a').get_attribute('href')
+                            
+                            hashtags = driver2.find_elements_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span/a')
+
+                            for i in range(1,len(hashtags)+1):
+                                print('HASHTAG: ' + hashtags[i-1].text)
+                        except selenium.common.exceptions.NoSuchElementException as e:
+                            print('No hashtag')
+                        	
+
+                            
+    
+
                         influencer_info.write(influencer_name + '\t\t'  + index + '\t\t' + num_of_followers.text + '\t\t' + photo_no + '\t\t' + num_of_media.text + '\t\t' + photo_link  + '\n')
                     else:
                     	print('STOP!')
