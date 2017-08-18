@@ -84,7 +84,7 @@ def crawler():
 
                     
                     photo_timestamp = timestamp(html_datetime)
-                    if int(time.time()) - int(photo_timestamp) < 172800: #media posted in the last 2 days
+                    if int(time.time()) - int(photo_timestamp) < 472800: #media posted in the last 2 days
                     	
                     	print('DIFF : ' + str(int(time.time()) - int(photo_timestamp)))
                     	print(int(time.time()))
@@ -112,17 +112,20 @@ def crawler():
                             #hashtag_link = hashtags.find_element_by_css_selector('a').get_attribute('href')
                             
                             hashtags = driver2.find_elements_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span/a')
+                            
+                            hashtag_list = []
 
                             for i in range(1,len(hashtags)+1):
                                 print('HASHTAG: ' + hashtags[i-1].text)
+                                hashtag_list.append(hashtags[i-1].text)
                         except selenium.common.exceptions.NoSuchElementException as e:
                             print('No hashtag')
                         	
 
-                            
-    
+                        likes = driver2.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/section[2]/div/span/span')   
+                        likes = likes.text
 
-                        influencer_info.write(influencer_name + '\t\t'  + index + '\t\t' + num_of_followers.text + '\t\t' + photo_no + '\t\t' + num_of_media.text + '\t\t' + photo_link  + '\n')
+                        influencer_info.write(influencer_name + '\t\t'  + index + '\t\t' + num_of_followers.text + '\t\t' + photo_no + '\t\t' + num_of_media.text + '\t\t' + photo_link + '\t\t' + 'location_info_here'  + '\t\t' +  str(hashtag_list) + '\t\t' + likes + '\n')
                     else:
                     	print('STOP!')
                     	collecting_media = False
