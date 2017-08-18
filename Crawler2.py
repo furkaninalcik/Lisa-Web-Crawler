@@ -36,22 +36,19 @@ def crawler():
 
     with open('influencer_list') as inf_list:
         influencers = inf_list.readlines()
-    # you may also want to remove whitespace characters like `\n` at the end of each line
     influencers = [x.strip() for x in influencers] 
     
     influencer_info.write('Kullanici Adi' + '\t\t' + 'Kullanici No' +'\t\t' + 'Takipci Sayisi' +'\t\t'+ 'Fotograf No' +'\t\t'+ 'Fotograf Link'+'\t\t' + 'Location'+'\t\t' + 'Hashtag' + '\n\n')
 
     index_count = 0
 
-    
-
     for influencer in influencers:
         link = 'http://instagram.com/' + influencer + '/'
-        #link = 'http://instagram.com/zachking/'
+        #link = 'http://instagram.com/' + 'furkaninalcik' + '/'
 
         collecting_media = True
         
-        if index_count == 2:
+        if index_count == 10:
         	break
         index_count += 1
         print(link)        
@@ -67,80 +64,89 @@ def crawler():
 
         print( 'Number of Posts:' + str(convertToInteger(num_of_posts_text.text)))
 
-        for page in range(1,page_number):
+        while True: #recursion ile degistir
+            try:
+                
+                driver.find_element_by_link_text('Load more')           
+        		
+            
         	
-            for i in range(1,5):
-                for j in range(1,4):
+                for i in range(1,5):
+                    for j in range(1,4):
 
+                        photo  = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div/div[1]/div[%d]/div[%d]' % (i , j))
 
-                    photo  = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/div/div[1]/div[%d]/div[%d]' % (i , j))
+                        photo_link = photo.find_element_by_css_selector('a').get_attribute('href')
 
-                    photo_link = photo.find_element_by_css_selector('a').get_attribute('href')
+	                    
+                        driver2.get(photo_link)
 
-                    
-                    driver2.get(photo_link)
+                        html_datetime = driver2.find_element_by_css_selector('time').get_attribute('datetime')
 
-                    html_datetime = driver2.find_element_by_css_selector('time').get_attribute('datetime')
+	                    
+                        photo_timestamp = timestamp(html_datetime)
+                        if int(time.time()) - int(photo_timestamp) < 259200: #media posted in the last 3 days
+	                    	
+                            print('DIFF : ' + str(int(time.time()) - int(photo_timestamp)))
+                            print(int(time.time()))
+                            print(int(photo_timestamp))
 
-                    
-                    photo_timestamp = timestamp(html_datetime)
-                    if int(time.time()) - int(photo_timestamp) < 472800: #media posted in the last 2 days
-                    	
-                    	print('DIFF : ' + str(int(time.time()) - int(photo_timestamp)))
-                    	print(int(time.time()))
-                    	print(int(photo_timestamp))
+                            influencer_name = influencer
 
-                        influencer_name = influencer
+                            index = str(index_count)
+	        
+                            num_of_followers = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/header/div[2]/ul/li[2]')
+	 
+                            print(num_of_followers.text)
+	       
+                            num_of_media = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/header/div[2]/ul/li[1]')
 
-                        index = str(index_count)
-        
-                        num_of_followers = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/header/div[2]/ul/li[2]')
- 
-                        print(num_of_followers.text)
-       
-                        num_of_media = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/article/header/div[2]/ul/li[1]')
+                            print(num_of_media.text)
+	                    
+                            #timestamp = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div/div[2]/div/article/div[2]/div[2]/a/time')
 
-                        print(num_of_media.text)
-                    
-                        #timestamp = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div/div[2]/div/article/div[2]/div[2]/a/time')
+                            photo_no = index + '_' + str((i-1)*3 + j)
+	 
+                            #hashtags = driver2.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span')
+	                        
+                            try:
+                                #hashtag_link = hashtags.find_element_by_css_selector('a').get_attribute('href')
+	                            
+                                hashtags = driver2.find_elements_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span/a')
+	                            
+                                hashtag_list = []
 
-                        photo_no = index + '_' + str((i-1)*3 + j)
- 
-                        #hashtags = driver2.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span')
-                        
-                        try:
-                            #hashtag_link = hashtags.find_element_by_css_selector('a').get_attribute('href')
-                            
-                            hashtags = driver2.find_elements_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/div[1]/ul/li[1]/span/a')
-                            
-                            hashtag_list = []
+                                for i in range(1,len(hashtags)+1):
+                                    print('HASHTAG: ' + hashtags[i-1].text)
+                                    hashtag_list.append(hashtags[i-1].text)
+                            except selenium.common.exceptions.NoSuchElementException as e:
+                                print('No hashtag')
+	                        	
 
-                            for i in range(1,len(hashtags)+1):
-                                print('HASHTAG: ' + hashtags[i-1].text)
-                                hashtag_list.append(hashtags[i-1].text)
-                        except selenium.common.exceptions.NoSuchElementException as e:
-                            print('No hashtag')
-                        	
+                            likes = driver2.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/section[2]/div/span/span')   
+                            likes = likes.text
 
-                        likes = driver2.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/section[2]/div/span/span')   
-                        likes = likes.text
-
-                        influencer_info.write(influencer_name + '\t\t'  + index + '\t\t' + num_of_followers.text + '\t\t' + photo_no + '\t\t' + num_of_media.text + '\t\t' + photo_link + '\t\t' + 'location_info_here'  + '\t\t' +  str(hashtag_list) + '\t\t' + likes + '\n')
-                    else:
-                    	print('STOP!')
-                    	collecting_media = False
+                            influencer_info.write(influencer_name + '\t\t'  + index + '\t\t' + num_of_followers.text + '\t\t' + photo_no + '\t\t' + num_of_media.text + '\t\t' + photo_link + '\t\t' + 'location_info_here'  + '\t\t' +  str(hashtag_list) + '\t\t' + likes + '\n')
+                        else:
+                        	print('STOP!')
+                        	collecting_media = False
+                        if collecting_media == False:
+                        	break
                     if collecting_media == False:
-                    	break
+                        	break
                 if collecting_media == False:
-                    	break
-            if collecting_media == False:
-                    	break
-            else:
-                link = driver.find_element_by_link_text('Load more').get_attribute('href')           
-                driver.get(link)
+                        	break
+                else:
+                    link = driver.find_element_by_link_text('Load more').get_attribute('href')           
+                    driver.get(link)
+
+            except selenium.common.exceptions.NoSuchElementException as e:
+           		print('LAST PAGE')
+           		break
 
 
         driver.close()
+        driver2.close()
 
 
 crawler()
