@@ -1,77 +1,8 @@
-Kullanici Adi		Kullanici No		Takipci Sayisi		Fotograf No		Fotograf Link		Location		Hashtag
+Kullanici Adi		Takipci Sayisi		Fotograf ID		Fotograf Link		Hashtags		Location exists?		Location:		Likes
 
-danbilzerian		1		22.6m followers		1_1		1,208 posts		https://www.instagram.com/p/BX3l2utFBt7/?taken-by=danbilzerian		location_info_here		[]		415,539
-danbilzerian		1		22.6m followers		1_2		1,208 posts		https://www.instagram.com/p/BX2TkeUlKIw/?taken-by=danbilzerian		location_info_here		[]		368,915
-anitta		2		22.2m followers		2_1		2,614 posts		https://www.instagram.com/p/BX3zQrbFhIZ/?taken-by=anitta		location_info_here		[u'@marcusmajella', u'@ferdinandoshow']		164,536
-hudabeauty		3		21.1m followers		3_1		11,667 posts		https://www.instagram.com/p/BX8P6__AR41/?taken-by=hudabeauty		location_info_here		[u'@jakewarden', u'#hudabeauty']		286,222
-hudabeauty		3		21.1m followers		3_5		11,667 posts		https://www.instagram.com/p/BX5yB5gAbPR/?taken-by=hudabeauty		location_info_here		[u'@teaflego', u'#hudabeautyliquidmatte']		1,140,595
-hudabeauty		3		21.1m followers		3_6		11,667 posts		https://www.instagram.com/p/BX4_EKbgkUS/?taken-by=hudabeauty		location_info_here		[u'#Kareoketour', u'@evalongoria', u'@jenatkinhair', u'@mrmikerosenthal', u'@johnlegend', u'@chrissyteigen', u'@monakattan']		581,317
-hudabeauty		3		21.1m followers		3_4		11,667 posts		https://www.instagram.com/p/BX6PubHAm9z/?taken-by=hudabeauty		location_info_here		[u'@katieryan430']		948,033
-hudabeauty		3		21.1m followers		3_2		11,667 posts		https://www.instagram.com/p/BX7WQb4glKw/?taken-by=hudabeauty		location_info_here		[u'@spyyc', u'#hudabeauty']		988,208
-hudabeauty		3		21.1m followers		3_6		11,667 posts		https://www.instagram.com/p/BX4_EKbgkUS/?taken-by=hudabeauty		location_info_here		[u'#Kareoketour', u'@evalongoria', u'@jenatkinhair', u'@mrmikerosenthal', u'@johnlegend', u'@chrissyteigen', u'@monakattan']		581,339
-hudabeauty		3		21.1m followers		3_7		11,667 posts		https://www.instagram.com/p/BX4k9UHgcgo/?taken-by=hudabeauty		location_info_here		[u'@popsugarbeauty', u'@kristinarodulfo', u'#hudabeautydesertdusk', u'#HudaBeautySeptember18']		41,190
-hudabeauty		3		21.1m followers		3_11		11,667 posts		https://www.instagram.com/p/BX30HZ-HHHW/?taken-by=hudabeauty		location_info_here		[u'@lsk_makeup', u'#hudabeautyliquidmatte', u'#hudabeautylipstrobe']		1,405,766
-hudabeauty		3		21.1m followers		3_9		11,667 posts		https://www.instagram.com/p/BX4WNdJAJkl/?taken-by=hudabeauty		location_info_here		[u'#Repost', u'@meliysabel', u'#hudabeauty3dhighlight']		792,777
-hudabeauty		3		21.1m followers		3_10		11,667 posts		https://www.instagram.com/p/BX4LXxQAsAM/?taken-by=hudabeauty		location_info_here		[u'#Repost', u'@christiebrinkley', u'#oneside', u'#onesidelove', u'#love', u'#heatherheyer', u'@cnn', u'#charlottesville', u'#nohate', u'#noracism']		659,869
-raffinagita1717		5		19.3m followers		5_1		5,829 posts		https://www.instagram.com/p/BX7_M-Sgc0G/?taken-by=raffinagita1717		location_info_here		[u'#NontonDiMox', u'@moxdigital']		22,046
-raffinagita1717		5		19.3m followers		5_5		5,829 posts		https://www.instagram.com/p/BX7Le_MAO-y/?taken-by=raffinagita1717		location_info_here		[u'@rafatharmovie', u'@cinema.21', u'#yukajakkeluarganonton', u'#rafatharmovie', u'#familymovietime']		24,059
-lelepons		6		18.6m followers		6_1		1,861 posts		https://www.instagram.com/p/BX7pe8ojzA6/?taken-by=lelepons		location_info_here		[]		1,000,298
-lelepons		6		18.6m followers		6_2		1,861 posts		https://www.instagram.com/p/BX62hnNji8w/?taken-by=lelepons		location_info_here		[u'@hannahstocking', u'@anitta']		5,110,386
-lelepons		6		18.6m followers		6_6		1,861 posts		https://www.instagram.com/p/BX3eeITDdZh/?taken-by=lelepons		location_info_here		[u'@tonioskits', u'@Victoriamoore_93', u'@nelly']		3,744,616
-lelepons		6		18.6m followers		6_4		1,861 posts		https://www.instagram.com/p/BX4RF4FjSS-/?taken-by=lelepons		location_info_here		[]		1,446,528
-lelepons		6		18.6m followers		6_5		1,861 posts		https://www.instagram.com/p/BX3hTzLjE4C/?taken-by=lelepons		location_info_here		[]		1,267,285
-lelepons		6		18.6m followers		6_6		1,861 posts		https://www.instagram.com/p/BX3eeITDdZh/?taken-by=lelepons		location_info_here		[u'@tonioskits', u'@Victoriamoore_93', u'@nelly']		3,744,801
-lelepons		6		18.6m followers		6_7		1,861 posts		https://www.instagram.com/p/BX1r_QuD6Ao/?taken-by=lelepons		location_info_here		[]		1,302,357
-amandacerny		7		17.1m followers		7_1		1,451 posts		https://www.instagram.com/p/BX6rcKrhWca/?taken-by=amandacerny		location_info_here		[]		628,531
-amandacerny		7		17.1m followers		7_2		1,451 posts		https://www.instagram.com/p/BX5biI8ByAQ/?taken-by=amandacerny		location_info_here		[u'@justinroberts44', u'#TeamCerny', u'#cernation']		707,311
-433		8		15.2m followers		8_1		6,626 posts		https://www.instagram.com/p/BX8M1VQgn85/?taken-by=433		location_info_here		[u'@chelseafc', u'@the433app', u'@goa1ie', u'@d3fender', u'@playm10ker', u'@str9ker', u'@n11tmeg', u'@supp12ter', u'@14gend', u'@433FIFA', u'@433skills', u'@433girl', u'@433kids']		380,767
-sporf.official		9		12.9m followers		9_1		5,959 posts		https://www.instagram.com/p/BX8SnBxD3vh/?taken-by=sporf.official		location_info_here		[u'@streetsoccer_belgium', u'@martijn_debbaut', u'@SPORF.official', u'@SPORF.Skills', u'@SPORF.Freestyle', u'@SPORF.Kicks', u'@In.thegame']		64,894
-thegoodquote		10		12.7m followers		10_1		3,465 posts		https://www.instagram.com/p/BX8Onhch7G4/?taken-by=thegoodquote		location_info_here		[]		36,877
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX8Hx1oBysd/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		44,921
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX8Gb_yh2iP/?taken-by=thegoodquote		location_info_here		[]		8,642
-thegoodquote		10		12.7m followers		10_4		3,465 posts		https://www.instagram.com/p/BX8A71Ahegc/?taken-by=thegoodquote		location_info_here		[u'@thegoodcomedy', u'#thegoodquote']		905,182
-thegoodquote		10		12.7m followers		10_5		3,465 posts		https://www.instagram.com/p/BX77ySmh5vy/?taken-by=thegoodquote		location_info_here		[u'@lewishowes']		89,326
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX8Gb_yh2iP/?taken-by=thegoodquote		location_info_here		[]		8,650
-thegoodquote		10		12.7m followers		10_7		3,465 posts		https://www.instagram.com/p/BX7zM4vhBx3/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		65,894
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX8Hx1oBysd/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		45,045
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX8Gb_yh2iP/?taken-by=thegoodquote		location_info_here		[]		8,659
-thegoodquote		10		12.7m followers		10_10		3,465 posts		https://www.instagram.com/p/BX7egpKBJsU/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		111,574
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX8Hx1oBysd/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		45,108
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX8Gb_yh2iP/?taken-by=thegoodquote		location_info_here		[]		8,668
-thegoodquote		10		12.7m followers		10_1		3,465 posts		https://www.instagram.com/p/BX68NDqhyIU/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		196,955
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX6nlBRhA2k/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		159,985
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX6gtmkhcUX/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		121,824
-thegoodquote		10		12.7m followers		10_4		3,465 posts		https://www.instagram.com/p/BX6a_E5h2Yz/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		134,907
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX6nlBRhA2k/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		159,998
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX6gtmkhcUX/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		121,832
-thegoodquote		10		12.7m followers		10_7		3,465 posts		https://www.instagram.com/p/BX6FP6hBISg/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		89,176
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX6nlBRhA2k/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		160,010
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX6gtmkhcUX/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		121,840
-thegoodquote		10		12.7m followers		10_10		3,465 posts		https://www.instagram.com/p/BX5i90zhbVH/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		184,868
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX6nlBRhA2k/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		160,023
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX6gtmkhcUX/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		121,849
-thegoodquote		10		12.7m followers		10_1		3,465 posts		https://www.instagram.com/p/BX5OasphoFn/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		157,735
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX5AqJThykF/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		230,836
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX45thnhTMQ/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		145,707
-thegoodquote		10		12.7m followers		10_4		3,465 posts		https://www.instagram.com/p/BX4y5ZDBc6R/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		221,612
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX5AqJThykF/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		230,836
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX45thnhTMQ/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		145,708
-thegoodquote		10		12.7m followers		10_7		3,465 posts		https://www.instagram.com/p/BX376tMBH6J/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		123,357
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX5AqJThykF/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		230,838
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX45thnhTMQ/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		145,713
-thegoodquote		10		12.7m followers		10_10		3,465 posts		https://www.instagram.com/p/BX3Zpmmh41r/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		130,396
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX5AqJThykF/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		230,837
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX45thnhTMQ/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		145,713
-thegoodquote		10		12.7m followers		10_1		3,465 posts		https://www.instagram.com/p/BX3OXXuBR00/?taken-by=thegoodquote		location_info_here		[u'#GoodVibeTribe', u'#TheGoodVibeTribe']		22,425
-thegoodquote		10		12.7m followers		10_5		3,465 posts		https://www.instagram.com/p/BX2U6nZBUvY/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		167,472
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX2-LZxBcXz/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		122,260
-thegoodquote		10		12.7m followers		10_4		3,465 posts		https://www.instagram.com/p/BX2pnDOBu--/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		178,965
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX3FBYQh-TM/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		124,138
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX2-LZxBcXz/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		122,260
-thegoodquote		10		12.7m followers		10_7		3,465 posts		https://www.instagram.com/p/BX2HQQUhgoD/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		173,304
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX3FBYQh-TM/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		124,138
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX2-LZxBcXz/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		122,260
-thegoodquote		10		12.7m followers		10_10		3,465 posts		https://www.instagram.com/p/BX1d_Bih00b/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		214,367
-thegoodquote		10		12.7m followers		10_2		3,465 posts		https://www.instagram.com/p/BX3FBYQh-TM/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		124,138
-thegoodquote		10		12.7m followers		10_3		3,465 posts		https://www.instagram.com/p/BX2-LZxBcXz/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		122,260
-thegoodquote		10		12.7m followers		10_1		3,465 posts		https://www.instagram.com/p/BX1ClqPhpgM/?taken-by=thegoodquote		location_info_here		[u'#TheGoodQuote']		93,952
+lelepons		18,730,191		lelepons_2017-08-19T19:32:00.000Z		video		[u'@montanatucker', u'@official_janina', u'@alysonstoner', u'@didntinviteme']		0		N/A						2,668,526
+lelepons		18,730,191		lelepons_2017-08-19T03:32:55.000Z		https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/20969353_1526103107479442_4598428197413978112_n.jpg		[]		1		Malibu, California						1,271,175
+lelepons		18,730,191		lelepons_2017-08-18T19:40:50.000Z		https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/20902421_116878075638738_5003719930147766272_n.jpg		[]		1		Los Angeles, California						1,416,308
+lelepons		18,730,191		lelepons_2017-08-18T10:35:59.000Z		https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/20839097_819385158243211_7033232238254751744_n.jpg		[]		1		Malibu, California						1,508,693
+lelepons		18,730,191		lelepons_2017-08-18T03:10:43.000Z		video		[u'@hannahstocking', u'@anitta']		0		N/A						7,856,938
+lelepons		18,730,191		lelepons_2017-08-17T19:51:22.000Z		video		[u'@sommerray', u'@thegabrielzamora', u'@jamesmarchioni']		0		N/A						9,642,648
