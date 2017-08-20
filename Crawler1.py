@@ -8,9 +8,10 @@ import urllib
 def crawler():
     
     influencer_list = open('influencer_list' , 'w')
+    
+    num_of_pages = 5 #number of pages to be crawled
 
-
-    for j in range(1,5):
+    for j in range(1,num_of_pages):
         link = "http://influence.iconosquare.com/category/all/" + str(j)
 
         influencerPage = requests.get(link)
@@ -19,13 +20,8 @@ def crawler():
         for i in range(1,30):
 	       
             influencer = influencerPageTree.xpath('//*[@id="home-top-brands"]/div[2]/table/tbody[1]/tr[%d]/td[1]/a/p' % i)
-            #print(link)    
-            #influencer_list.write('\t_(' + str(i+((j-1)*29)) + ')_\t\t' + influencer[0].text + '\n')
             
             influencer_list.write(influencer[0].text + '\n')
-            
-            #influencer_list.write(i)
-            #print (influencer[0].text)
 
     influencer_list.close()
 
